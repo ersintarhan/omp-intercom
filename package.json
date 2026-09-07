@@ -1,0 +1,49 @@
+{
+  "name": "omp-intercom",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "index.ts",
+  "files": [
+    "index.ts",
+    "types.ts",
+    "config.ts",
+    "cwd.ts",
+    "extension-api.ts",
+    "format-context.ts",
+    "reply-tracker.ts",
+    "broker/**/*.ts",
+    "ui/**/*.ts",
+    "skills/**/*"
+  ],
+  "scripts": {
+    "test": "bun test broker/client.test.ts broker/client-liveness.test.ts broker/extension.test.ts broker/framing.test.ts broker/paths.test.ts broker/runtime-claim.test.ts broker/spawn.test.ts config.test.ts cwd.test.ts format-context.test.ts reply-tracker.test.ts intercom.integration.test.ts test/inline-message.test.ts test/overlay-width.test.ts"
+  },
+  "keywords": [
+    "omp-package",
+    "pi-package"
+  ],
+  "omp": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "skills": [
+      "./skills"
+    ]
+  },
+  "peerDependencies": {
+    "@oh-my-pi/pi-ai": "*",
+    "@oh-my-pi/pi-coding-agent": "*",
+    "@oh-my-pi/pi-tui": "*",
+    "typebox": "*"
+  },
+  "dependencies": {
+    "tsx": "^4.20.0"
+  },
+  "devDependencies": {
+    "@oh-my-pi/pi-ai": "*",
+    "@oh-my-pi/pi-coding-agent": "*",
+    "@oh-my-pi/pi-tui": "*",
+    "typebox": "*"
+  }
+}
