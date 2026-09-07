@@ -2,6 +2,15 @@
 
 All notable changes to omp-intercom are documented here.
 
+## [0.1.1] - 2026-09-07
+
+### Changed
+- New omp-intercom banner artwork.
+- Release workflow switched to npm trusted publishing (OIDC), no token required.
+
+### Fixed
+- Removed `publishConfig.provenance` which broke local `npm publish`.
+
 ## [0.1.0] - 2026-09-07
 
 Initial omp release, ported from [pi-intercom](https://github.com/earendil-works/pi-intercom) v0.13.0.
