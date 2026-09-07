@@ -1,6 +1,7 @@
 {
   "name": "omp-intercom",
   "version": "0.1.0",
+  "description": "Direct 1:1 messaging between omp sessions on the same machine",
   "license": "MIT",
   "type": "module",
   "main": "index.ts",
@@ -14,15 +15,31 @@
     "reply-tracker.ts",
     "broker/**/*.ts",
     "ui/**/*.ts",
-    "skills/**/*"
+    "skills/**/*",
+    "CHANGELOG.md",
+    "banner.png"
   ],
   "scripts": {
     "test": "bun test broker/client.test.ts broker/client-liveness.test.ts broker/extension.test.ts broker/framing.test.ts broker/paths.test.ts broker/runtime-claim.test.ts broker/spawn.test.ts config.test.ts cwd.test.ts format-context.test.ts reply-tracker.test.ts intercom.integration.test.ts test/inline-message.test.ts test/overlay-width.test.ts"
   },
   "keywords": [
     "omp-package",
-    "pi-package"
+    "pi-package",
+    "omp",
+    "extension",
+    "intercom",
+    "messaging"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersintarhan/omp-intercom.git"
+  },
+  "homepage": "https://github.com/ersintarhan/omp-intercom#readme",
+  "bugs": "https://github.com/ersintarhan/omp-intercom/issues",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "omp": {
     "extensions": [
       "./index.ts"
