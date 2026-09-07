@@ -34,11 +34,8 @@
     "type": "git",
     "url": "git+https://github.com/ersintarhan/omp-intercom.git"
   },
-  "homepage": "https://github.com/ersintarhan/omp-intercom#readme",
-  "bugs": "https://github.com/ersintarhan/omp-intercom/issues",
   "publishConfig": {
-    "access": "public",
-    "provenance": true
+    "access": "public"
   },
   "omp": {
     "extensions": [
