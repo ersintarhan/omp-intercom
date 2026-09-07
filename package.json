@@ -1,6 +1,6 @@
 {
   "name": "omp-intercom",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Direct 1:1 messaging between omp sessions on the same machine",
   "license": "MIT",
   "type": "module",
